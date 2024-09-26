@@ -1,66 +1,89 @@
-# Job Portal
+#Job Portal
 
-Job Portal is a MERN Stack based web app which helps in streamlining the flow of job application process. It allows users to select there roles (applicant/recruiter), and create an account. In this web app, login session are persistent and REST APIs are securely protected by JWT token verification. After logging in, a recruiter can create/delete/update jobs, shortlist/accept/reject applications, view resume and edit profile. And, an applicant can view jobs, perform fuzzy search with various filters, apply for jobs with an SOP, view applications, upload profile picture, upload resume and edit profile. Hence, it is an all in one solution for a job application system.
+Job Portal is a web application built using the MERN stack, designed to simplify the job application
+process. Users can choose their role as either an applicant or a recruiter and create an account to
+get started.
 
-Demo: [Click Here](https://www.youtube.com/watch?v=lIrN-LbbBnw&ab_channel=ShlokPandey)
+Once logged in, recruiters can create, update, or delete job postings, as well as shortlist, accept, or
+reject applications and view resumes. Applicants can browse job listings, use filters for a tailored
+search, apply for jobs by submitting a Statement of Purpose (SOP), view their applications, upload a
+profile picture and resume, and edit their profiles. This platform aims to provide a comprehensive
+solution for job applications.
 
-Directory structure of the web app is as follows:
-
-```
+#Directory Structure
 - backend/
-    - public/
-        - profile/
-        - resume/
+ - public/
+ - profile/
+ - resume/
 - frontend/
 - README.md
-```
 
-## Instructions for initializing web app:
+#Getting Started:
 
-- Install Node JS, MongoDB in the machine.
-- Start MongoDB server: `sudo service mongod start`
-- Move inside backend directory: `cd backend`
-- Install dependencies in backend directory: `npm install`
-- Start express server: `npm start`
-- Backend server will start on port 4444.
-- Now go inside frontend directory: `cd ..\frontend`
-- Install dependencies in frontend directory: `npm install`
-- Start web app's frontend server: `npm start`
-- Frontend server will start on port 3000.
-- Now open `http://localhost:3000/` and proceed creating jobs and applications by signing up in required categories.
+Follow these steps to set up the web app on your machine:
+1. Install Required Software:
+ - Make sure you have Node.js and MongoDB installed.
+2. Start the MongoDB Server:
+  bash
+ sudo service mongod start
 
-## Dependencies:
+3. Set Up the Backend:
+ - Navigate to the backend directory:
+  bash
+ cd backend
 
-- Frontend
-  - @material-ui/core
-  - @material-ui/icons
-  - @material-ui/lab
-  - axios
-  - material-ui-chip-input
-  - react-phone-input-2
-- Backend
-  - bcrypt
-  - body-parser
-  - connect-flash
-  - connect-mongo
-  - cors
-  - crypto
-  - express
-  - express-session
-  - jsonwebtoken
-  - mongoose
-  - mongoose-type-email
-  - multer
-  - passport
-  - passport-jwt
-  - passport-local
-  - uuid
+ - Install backend dependencies:
+  bash
+ npm install
 
-# Machine Specifications
+ - Start the Express server:
+  bash
+ npm start
 
-Details of the machine on which the webapp was tested:
+ - The backend server will run on port 4444.
+4. Set Up the Frontend:
+ - Go back to the main directory and then navigate to the frontend directory:
+  bash
+ cd ../frontend
 
-- Operating System: Elementary OS 5.1 (Hera)
-- Terminal: Bash
-- Processor: Intel Core i7-8750H CPU @ 2.20 GHz 2.21 GHz
-- RAM: 16 GB
+ - Install frontend dependencies:
+    bash
+ npm install
+    
+ - Start the frontend server:
+    bash
+ npm start
+    
+ - The frontend server will run on port 3000.
+5. Access the Web App:
+ - Open your browser and go to http://localhost:3000/. You can start creating jobs and applications
+by signing up in your chosen role.
+
+#Dependencies:
+
+Frontend
+- @material-ui/core
+- @material-ui/icons
+- @material-ui/lab
+- axios
+- material-ui-chip-input
+- react-phone-input-2
+
+Backend
+- bcrypt
+- body-parser
+- connect-flash
+- connect-mongo
+- cors
+- crypto
+- express
+- express-session
+- jsonwebtoken
+- mongoose
+- mongoose-type-email
+- multer
+- passport
+- passport-jwt
+- passport-local
+- uuid
+
